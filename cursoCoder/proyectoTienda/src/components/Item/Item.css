@@ -1,0 +1,12 @@
+.productos p{
+    background-color: antiquewhite;
+    color: rgb(80, 84, 90);
+
+}
+.botones{
+    display: flex;
+}
+.btn{
+    border: 2px solid rgb(80, 84, 90);
+    background-color: rgb(255, 255, 255);
+}

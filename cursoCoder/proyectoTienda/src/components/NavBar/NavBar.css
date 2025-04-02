@@ -1,0 +1,34 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(189, 190, 194);
+}
+.logo-container {
+    flex: 0,5;
+    margin-left: 20px;
+    width: 100px;
+}
+.menu-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+.carrito{
+    margin-right: 20px;
+}
+.itemMenu{
+
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+}
+.itemMenu .nav-link{
+    color: rgb(62, 63, 68);
+}
+.itemMenu .nav-link:hover{
+    color: rgb(255, 255, 255);
+}
+.logo {
+    height: 100px;
+}

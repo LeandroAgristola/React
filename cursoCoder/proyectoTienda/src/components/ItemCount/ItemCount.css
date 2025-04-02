@@ -1,0 +1,20 @@
+.items {
+    display: flex;
+    width: 10 rem;
+    padding: 2 rem;
+    background-color: tomato;
+    justify-content: center;    
+    
+}
+.items .btn {
+    background-color: aquamarine;
+    color: tomato;
+    padding: 1 rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5 px;
+}
+.botonCompleto {
+    display: flex;
+    flex-direction: column;
+}
