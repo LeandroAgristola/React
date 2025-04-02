@@ -1,6 +1,6 @@
 
 import './ItemDetail.css'
-import ItemCount from '../components/ItemCount/ItemCount';
+import ItemCount from '../ItemCount/ItemCount';
 import {useState} from 'react';
 
 
