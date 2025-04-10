@@ -29,6 +29,7 @@ Estructura general del juego
         Izquierda
         Centro
         Derecha
+
 3. Partida (turnos de penales)
 
     Turno del Jugador 1:
@@ -37,6 +38,11 @@ Estructura general del juego
     Mostrar resultado (Gol o Atajado) + marcar en el marcador (❌ o ⚽).
     Botón: “Siguiente penal”.
     Turno del Jugador 2: lo mismo pero al revés.
+
+    Se deben mostrar los dos marcadores tanto del jugador A como el B nombre y debajo el marcador, esto debe estar siempre visible 
+    los marcadores mostrar en rojo si el penla se erro, en verse si se metio el gol y en gris si todavia no se pateo
+    No se muestra la animacion de las manos y la pelota en el arco segun donde patearon y atajaron cada jugador
+
 
 4. Marcador
 
