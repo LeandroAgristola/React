@@ -9,8 +9,8 @@ useState:
 
 Components:
 
-    StartScreen.jsx        # Pantalla de inicio
-    StrategySelection.jsx  # Selección de pateo y atajada
+    OK - StartScreen.jsx   # Pantalla de inicio 
+    OK - PenaltySetup.jsx  # Selección de pateo y atajada
     GameBoard.jsx          # Arco y turno actual
     ScoreBoard.jsx         # Marcador
     ResultMessage.jsx      # Mensaje del resultado (Gol o Atajado)
