@@ -1,0 +1,45 @@
+Descripción de tu tarea inicial:
+
+Tu tarea inicia crear una aplicación que permita a los usuarios agregar productos a un carrito de compras y visualizar la lista de productos seleccionados.
+
+Requisitos del Proyecto:
+
+1- Listar Productos
+
+    Crear un componente para mostrar los productos disponibles.
+
+2- Estado del Carrito
+
+    Usar useState para manejar el estado del carrito de compras.
+
+3- Agregar Productos
+
+    Implementar un evento de clic para añadir productos al carrito.
+
+4- Mostrar Carrito
+
+    Crear un componente para visualizar los productos seleccionados.
+
+5- Crear un Layout del eCommerce
+
+    (Header, Footer, Main, Nav)
+
+Pautas Generales
+
+1- Información de Productos
+
+    La lista debe incluir al menos nombre y precio de cada producto.
+
+2- Actualización Dinámica
+
+    El estado del carrito debe actualizarse al agregar cada producto.
+
+3- Carrito Vacío
+
+    Mostrar un mensaje cuando no haya productos seleccionados.
+
+Desafío Adicional
+
+Botón "Vaciar Carrito"
+
+    Implementar una función para eliminar todos los productos seleccionados del carrito.

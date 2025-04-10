@@ -1,0 +1,33 @@
+/* src/components/GaleriaIntereses.css */
+.galeria-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .intereses-botones {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permite que los botones pasen a la siguiente línea en pantallas pequeñas */
+  }
+  
+  .interes-boton {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+  }
+  
+  .interes-boton:hover {
+    background-color: #ccc;
+  }
+  
+  .interes-boton.active {
+    background-color: #00aaff; /* Cambia el color de fondo para el botón activo */
+    color: white;
+  }
