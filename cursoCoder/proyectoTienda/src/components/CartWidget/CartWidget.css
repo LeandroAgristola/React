@@ -1,12 +1,30 @@
-p{
-    color: rgb(10, 37, 185);
-}
 .cart {
     display: flex;
-    align-items:center;        
+    align-items: center;
     justify-content: center;
     background-color: rgb(203, 206, 218);
     border-radius: 10px;
     padding: 10px;
     margin-right: 20px;
+    flex: 0 0 auto; 
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.cart:hover {
+    background-color: rgb(180, 183, 200); 
+    transform: scale(1.05); 
+}
+
+.cart img {
+    height: 30px; 
+    width: auto;
+    margin-right: 5px; 
+}
+
+.cart p {
+    color: rgb(99, 22, 22);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
 }

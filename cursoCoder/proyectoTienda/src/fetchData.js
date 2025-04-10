@@ -1,7 +1,11 @@
-import { productos } from "./productos";
+import {productos} from './productos';  
 
-export const fetchData = () => new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve(productos);
-    }, 1500);
+export const fetchData = (data) => new Promise((resolve,reject) => {
+  setTimeout(() => {
+    
+    resolve(productos);
+},2000); 
 });
+export default fetchData;
+
+     

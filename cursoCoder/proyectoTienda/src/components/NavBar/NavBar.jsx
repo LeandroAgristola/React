@@ -15,16 +15,17 @@ function NavBar() {
         
         <ul className='itemMenu'>
           <li><Link to="/">Inicio</Link></li>
-          {/* <li><Link to="/productos">Productos</Link></li>
-          <li><Link to="/contacto">Contacto</Link></li> */}
-          <li>
-            <div>
-              <Link to="/carrito"><CartWidget/></Link>
-            </div>
-          </li>
+          <li><Link to="/categoria/llaveros">Llaveros</Link></li>
+          <li><Link to="/categoria/figuras">Figuras</Link></li>
+          <li><Link to="/categoria/utilidades">Utilidades</Link></li>
+          <li><Link to="/categoria/vehiculos">Vehiculos</Link></li>
 
         </ul>
       </nav>
+      <div className='carrito'>
+        <Link to="/carrito"><CartWidget/></Link>
+      </div>
+      
      
     </header>
   );

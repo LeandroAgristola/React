@@ -1,34 +1,125 @@
 .menu {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: rgb(189, 190, 194);
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: #545455; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+    position: relative;
 }
-.logo-container {
-    flex: 0,5;
-    margin-left: 20px;
-    width: 100px;
-}
-.menu-container {
-    flex: 2;
-    display: flex;
-    justify-content: center;
-}
-.carrito{
-    margin-right: 20px;
-}
-.itemMenu{
 
-    border-radius: 10px;
+/* Logo */
+.logo-container {
+    flex-shrink: 0; /* Evita que el logo se reduzca */
+}
+
+.logo-container .logo {
+    height: 80px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-container .logo:hover {
+    transform: scale(1.1);
+}
+
+/* Contenedor del menú */
+.menu-container {
+    flex: 1;  /* Permite que ocupe todo el espacio disponible */
     display: flex;
-    gap: 20px;
+    justify-content: center; /* Centra los elementos dentro del contenedor */
 }
-.itemMenu .nav-link{
-    color: rgb(62, 63, 68);
+
+/* Lista del menú */
+.itemMenu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    align-items: center;
 }
-.itemMenu .nav-link:hover{
-    color: rgb(255, 255, 255);
+
+.itemMenu li {
+    display: inline-block;
 }
-.logo {
-    height: 100px;
+
+.itemMenu a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: color 0.3s, transform 0.2s;
 }
+
+.itemMenu a:hover {
+    color: #adadad;
+    transform: translateY(-2px);
+}
+
+* Carrito */
+.carrito {
+    margin-left: auto; 
+    display: flex;
+    align-items: center;
+}
+
+.carrito a {
+    display: flex;
+    align-items: center;
+    color: #5a1212;
+    transition: transform 0.3s;
+}
+
+.carrito a:hover {
+    color: #aa2929;
+    transform: scale(1.1);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .menu-container {
+        flex: none;
+    }
+
+    .itemMenu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .carrito {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

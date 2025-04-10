@@ -1,14 +1,16 @@
-import './CartWidget.css';
-import { FaCartShopping } from "react-icons/fa6";
+import './CartWidget.css'
+import { TbShoppingCart } from "react-icons/tb";
+import React  from 'react';
 
-function CartWidget({ cantidad }) {
 
-  return (
-    <>
-      <FaCartShopping color="blue" />
-      <p>{cantidad}</p>
-    </>
-  );
-};
-
-export default CartWidget;
+function CartWidget(){
+  
+    
+    return (
+      
+      <div className='cart'>
+        <TbShoppingCart /><p>(5)</p>
+      </div>
+    );  
+}
+export default CartWidget

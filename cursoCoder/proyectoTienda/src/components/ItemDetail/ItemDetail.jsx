@@ -1,13 +1,21 @@
 
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount';
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
+import { Link, useParams } from 'react-router';
+import fetchData from '../../fetchData';
+import Loader from '../Loader/Loader';
 
 
-function ItemDetail({producto, volverAlInicio}){
+function ItemDetail(){
+    
+    const { id } = useParams();
     // console.log(producto);
-    const [contador, setContador] = useState(1);
-    const {nombre,precio,descripcion,stock,categoria} = producto;
+  
+    const [loading, setLoading] = useState(true);
+    const [producto, setProducto] = useState(null);
+    const [contador, setContador] = useState(1); 
+    // const {nombre,precio,descripcion,stock,categoria} = producto;
     
     
     function agregarAlCarrito(prod){
@@ -20,22 +28,46 @@ function ItemDetail({producto, volverAlInicio}){
         
     };
     
-    // const [contador, setContador] = useState(0);
+
+    useEffect(()=>{
+        fetchData()
+        .then(response => {
+            
+            const productoAMostrar = response.find(el => el.id === parseInt(id));
+            setProducto(productoAMostrar);
+
+            // console.log(parseInt(id));
+            // setTodosLosProductos(response);
+              
+            setTimeout(() => {
+                setLoading(false);
+            }, 500); 
+            
+
+
+        }) 
+        .catch(error => console.error(error))
+    },[]);    
     return (
-        <div className='productos'>
-            <h2>{nombre}</h2>
-            <p>${producto.precio}</p>
-            {/* <p>{producto.descripcion}</p> */}
-            <p>Quedan {producto.stock} disponibles</p>                
-            <ItemCount stock = {stock} contador = {contador} setContador = {setContador}/> 
-            <button className='btn' onClick={()=> agregarAlCarrito(producto)}>Agregar al carrito</button>
-            <button className='btn'onClick={volverAlInicio}>Volver al incio </button>
-        </div> 
-    
-        
-      
-    )
-  
-  
-  }
+        loading ?
+            <Loader />
+
+            :
+            
+            <div className='productos'>
+                
+                <h2>{producto.nombre}</h2>
+                <p>Precio: <b>${producto.precio}</b></p>
+                <p>Categoria : {producto.categoria}</p>
+                
+                <p>{producto.descripcion}</p>
+                <p>Quedan {producto.stock} disponibles</p>                
+                <ItemCount stock = {producto.stock} contador = {contador} setContador = {setContador}/>   
+                <button className='btn' onClick={()=> agregarAlCarrito(producto)}>Agregar al carrito</button>
+                <Link to={'/'}>
+                    <button className='btn'>Volver al incio </button>
+                </Link>
+            </div> 
+    );
+  };
 export default ItemDetail
