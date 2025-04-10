@@ -1,0 +1,52 @@
+useState:
+
+    players → nombres y estrategias
+    currentTurn → turno actual (quién patea)
+    score → array con los resultados (X o ⚽)
+    gamePhase → "inicio", "estrategia", "jugando", "finalizado"
+    resultMessage → mostrar “Gol” o “Atajado”
+    showNextButton → si está esperando al botón para avanzar
+
+Components:
+
+    StartScreen.jsx        # Pantalla de inicio
+    StrategySelection.jsx  # Selección de pateo y atajada
+    GameBoard.jsx          # Arco y turno actual
+    ScoreBoard.jsx         # Marcador
+    ResultMessage.jsx      # Mensaje del resultado (Gol o Atajado)
+    EndGame.jsx            # Fin del juego
+
+Estructura general del juego
+    1. Pantalla de inicio
+        Inputs para ingresar nombre del Jugador 1 y Jugador 2.
+        Botón de "Comenzar juego".
+
+    2. Selección de estrategia
+        Cada jugador selecciona:
+        Dónde quiere patear.
+        Dónde quiere atajar.
+        Opciones (ambos eligen antes de comenzar):
+        Izquierda
+        Centro
+        Derecha
+3. Partida (turnos de penales)
+
+    Turno del Jugador 1:
+    Se muestra una animación o gráfico simple del arco.
+    Se simula dónde patea y dónde el otro atajó.
+    Mostrar resultado (Gol o Atajado) + marcar en el marcador (❌ o ⚽).
+    Botón: “Siguiente penal”.
+    Turno del Jugador 2: lo mismo pero al revés.
+
+4. Marcador
+
+    Turno	Jugador 1	Jugador 2
+    1	        ❌	       ⚽
+    2	        ⚽	       ❌
+
+5. Fin del juego
+
+    Se determina quién ganó.
+    Mostrar mensaje final tipo: “¡Ganó Jugador X!”.
+    Botón: “Volver a jugar”.
+
