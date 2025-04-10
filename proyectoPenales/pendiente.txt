@@ -16,6 +16,12 @@ Components:
     ResultMessage.jsx      # Mensaje del resultado (Gol o Atajado)
     EndGame.jsx            # Fin del juego
 
+Archivos sugeridos nuevos
+    EndScreen.jsx: Pantalla final visual.
+    gameLogic.js: (opcional) funciones auxiliares para manejo de lógica del juego.
+    styles/penalty.css: (si deciden mover estilos ahí).
+
+
 Estructura general del juego
     1. Pantalla de inicio
         Inputs para ingresar nombre del Jugador 1 y Jugador 2.
@@ -55,4 +61,35 @@ Estructura general del juego
     Se determina quién ganó.
     Mostrar mensaje final tipo: “¡Ganó Jugador X!”.
     Botón: “Volver a jugar”.
+
+
+👤 Persona 1: Lógica & Estados del Juego
+    1. Manejo de Fin de Juego y Pantalla Final
+        📌 Crear pantalla final cuando se completan todos los turnos (ej: 10 rondas).
+        📌 Mostrar: Ganador, puntaje final y opción de reiniciar.
+        📌 Guardar en estado quién ganó y mostrar mensaje.
+
+    2. Agregar modo súper Gol o Atajada especial (opcional)
+        📌 Definir condiciones para un gol "especial" si se dan ciertas coincidencias entre jugador y estrategia (puede ser divertido).
+
+    3. Modularizar funciones si es necesario
+        📌 Extraer funciones de lógica (por ejemplo: getNextTurn, calculateScore) a un archivo utils/gameLogic.js para limpiar GameTurns.jsx.
+
+    4. Tests simples (si quieren escalar)
+        📌 Preparar casos simples en consola para verificar reglas de juego.
+
+👤 Persona 2: Estética, Animaciones & UX
+    1. Mejorar diseño visual de VisualArco
+        📌 Agregar animación al disparo (pelota que aparece y se mueve).
+        📌 Colorear aciertos/fallos (verde/rojo) por un par de segundos.
+
+    2. Mejorar diseño de ProgressBar y marcador
+        
+
+    3. Diseñar EndScreen.jsx (pantalla final visual)
+        📌 Mostrar animación o mensaje llamativo (🏆 o 😭).
+        📌 Botón para volver al inicio o jugar de nuevo.
+
+    4. Responsividad móvil básica
+        📌 Revisar que en pantallas pequeñas el arco, inputs y botones no se rompan.
 
