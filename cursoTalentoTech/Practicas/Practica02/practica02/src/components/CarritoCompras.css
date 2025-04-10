@@ -1,0 +1,63 @@
+/* Estilos para el contenedor del carrito de compras */
+.carrito-compras-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para la lista de items en el carrito */
+  .carrito-lista {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Estilos para cada item en el carrito */
+  .carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Estilos para el último item del carrito (elimina el borde inferior) */
+  .carrito-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Estilos para el nombre del producto en el carrito */
+  .carrito-item span:first-child {
+    flex-grow: 1;
+  }
+  
+  /* Estilos para la cantidad del producto en el carrito */
+  .carrito-item span:nth-child(2) {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  /* Estilos para el precio total del item en el carrito */
+  .carrito-item span:nth-child(3) {
+    font-weight: bold;
+    color: green;
+    margin-left: 10px;
+  }
+
+  /* Estilos para el botón "Vaciar Carrito" */
+.vaciar-carrito-boton {
+  background-color: #dc3545; /* Color rojo */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+/* Estilos para el botón "Vaciar Carrito" al pasar el ratón */
+.vaciar-carrito-boton:hover {
+  background-color: #c82333;
+}

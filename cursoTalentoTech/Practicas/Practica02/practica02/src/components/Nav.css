@@ -1,0 +1,31 @@
+/* Estilos para la barra de navegación principal */
+.main-nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  /* Estilos para la lista de enlaces de navegación */
+  .main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centra los enlaces horizontalmente */
+  }
+  
+  /* Estilos para cada elemento de la lista de navegación */
+  .main-nav li {
+    margin: 0 15px;
+  }
+  
+  /* Estilos para los enlaces de navegación */
+  .main-nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Estilos para los enlaces de navegación al pasar el ratón */
+  .main-nav a:hover {
+    color: #ddd;
+  }

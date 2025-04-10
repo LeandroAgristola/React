@@ -1,0 +1,85 @@
+/* Estilos para el contenedor de la lista de productos */
+.lista-productos-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para la lista de productos */
+  .productos-lista {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Estilos para cada item de producto en la lista */
+  .producto-item {
+    display: flex;
+    justify-content: space-between; /* Espacia los elementos internos */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Estilos para el último item de producto (elimina el borde inferior) */
+  .producto-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Estilos para el nombre del producto */
+  .producto-item span:first-child {
+    flex-grow: 1; /* Permite que el nombre del producto ocupe más espacio */
+  }
+  
+  /* Estilos para el precio del producto */
+  .producto-item span:nth-child(2) {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  /* Estilos para el botón "Agregar al Carrito" */
+  .producto-item button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 10px;
+  }
+  
+  /* Estilos para el botón "Agregar al Carrito" al pasar el ratón */
+  .producto-item button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Estilos para el contenedor de los controles de cantidad */
+.cantidad-control {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+/* Estilos para los botones de más y menos */
+.cantidad-control button {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8em;
+  min-width: 30px;
+  text-align: center;
+}
+
+.cantidad-control button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Estilos para la cantidad mostrada */
+.cantidad-control span {
+  font-weight: bold;
+  font-size: 1em;
+  min-width: 20px;
+  text-align: center;
+}
