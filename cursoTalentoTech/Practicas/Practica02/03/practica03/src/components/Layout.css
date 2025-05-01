@@ -1,0 +1,17 @@
+/* Contenedor principal del layout */
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%; /* Ocupa todo el ancho */
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenido principal */
+.main-content {
+  flex-grow: 1;
+  padding: 40px 60px; /* Más espacio lateral */
+  width: 100%;
+  box-sizing: border-box; /* Para que padding no afecte el ancho */
+}

@@ -1,0 +1,38 @@
+Requisitos del Proyecto:
+
+01- Integración con una API:
+
+    Usa MockAPI para obtener una lista de productos desde un endpoint.
+    Asegúrate de configurar correctamente la URL del recurso.
+
+02- Gestión del estado con useState:
+
+    Almacena los productos obtenidos de la API en un estado local.
+    Usa otro estado para gestionar si la aplicación está en proceso de carga.
+
+03- Manejo de efectos secundarios con useEffect:
+
+    Realiza la petición a la API cuando el componente principal de productos se monte.
+    Gestiona posibles errores y muestra un mensaje adecuado si ocurre algún problema.
+
+04- Estado de carga y errores:
+
+    Mientras los productos están cargando, muestra un mensaje o un spinner con "Cargando productos...".
+    Si ocurre un error, muestra un mensaje como: "Error al cargar productos. Inténtalo más tarde."
+
+05- Actualizar el diseño del eCommerce:
+
+    Crea una sección de productos dinámicos que se cargue dede la API.
+    Asegúrate de mantener el diseño atractivo y responsivo.
+
+06- Ampliación del carrito:
+
+    Permite agregar al carrito productos que ahora se obtendrán desde la API.
+    Si el carrito está vacío, muestra el mensaje "El carrito está vacío".
+
+Pautas generales del proyecto:
+
+    01- Estructura: Continuar con el proyecto de la clase anterior, agregando nueva funcionalidad.
+    02- Componentes: Mantener componentes organizados y reutilizables.
+    03- Código limpio: Evitar redundancias y organizar estados y efectos claramente.
+    04- Diseño: Usar Bootswatch o alternativa para mantener un diseño profesional.
