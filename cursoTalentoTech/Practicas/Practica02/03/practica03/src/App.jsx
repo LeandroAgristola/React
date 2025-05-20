@@ -12,7 +12,7 @@ function App() {
 
   // Cargar productos desde MockAPI
   useEffect(() => {
-    fetch('https://6812a437129f6313e20f2315.mockapi.io/productos') // Reemplazá con tu URL real
+    fetch('https://6812a437129f6313e20f2315.mockapi.io/productos') 
       .then((res) => res.json())
       .then((data) => {
         setProductos(data);
