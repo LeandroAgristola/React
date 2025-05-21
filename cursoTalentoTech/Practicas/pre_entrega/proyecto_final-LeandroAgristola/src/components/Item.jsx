@@ -13,7 +13,7 @@ function Item({ producto }) {
             src={producto.imagen} 
             className="card-img-top" 
             alt={producto.nombre} 
-            style={{ height: '400px', objectFit: 'cover' }}
+            style={{ height: '250px', objectFit: 'cover' }}
           />
         </Link>
         <div className="card-body d-flex flex-column">
