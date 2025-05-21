@@ -1,13 +1,13 @@
 import React from 'react';
-import ItemListContainer from '../components/ItemListContainer';
+import ItemListContainer from '../components/ItemListContainer.jsx';
 
-function Productos() {
+function Home() {
   return (
     <div>
-      <h2 className="text-center my-4">Nuestros Productos</h2>
+      <h2 className="text-center my-4">Página de Inicio</h2>
       <ItemListContainer />
     </div>
   );
 }
 
-export default Productos;
+export default Home;

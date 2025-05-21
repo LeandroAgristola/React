@@ -1,3 +1,5 @@
+import { useCart } from '../context/CartContext.jsx';
+
 function ItemDetail({ producto }) {
   const { agregarAlCarrito } = useCart();
 

@@ -14,7 +14,8 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email && password) { 
-      login({ nombre: email.split('@')[0] }); 
+      const nombreUsuario = email.split('@')[0];
+      login(nombreUsuario);
       navigate(from, { replace: true }); 
     } else {
       alert("Por favor, ingresa email y contraseña (simulados)");
